@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillaudit"
+version = "1.0.0"
+description = "Auditor de segurança para arquivos SKILL.md de agentes de IA."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+keywords = ["security", "ai", "skill", "prompt-injection", "audit"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+skillaudit = "skillaudit:main"
+
+[tool.setuptools]
+py-modules = ["skillaudit"]
